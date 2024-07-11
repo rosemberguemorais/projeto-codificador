@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto De Criptografia Oracle ONE</title>
+  <link rel="icon" href="assets/Oracle-ONE-icon.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body> 
+  <header class="logoAlura">
+    <img src="assets/Frame 6.png" alt="logo alura">
+  </header>
+
+  <main class="conteudo">
+   
+    <section class="conteudo_ladoEsquerdo">
+      <textarea class="conteudo_texto_textoDeEntrada_ladoEsquerdo" placeholder="Digite seu texto..." autofocus></textarea>
+      <div class="conteudo_exclamacao_ladoEsquerdo">
+        <img class="exclamacao" src="assets/bi_exclamation-circle-fill.png" alt="imagem exclamação">
+        <h4>Apenas letras minúsculas e sem acento.</h4>
+      </div>
+      <div class="conteudo_botoes_ladoEsquerdo">
+        <button class="conteudo_botoes_cript_ladoEsquerdo" onclick="Criptografia()">Criptografar</button>
+        <button class="conteudo_botoes_descript_ladoEsquerdo" onclick="Descriptografia()">Descriptografar</button>
+      </div>
+    </section>
+    <section class="conteudo_ladoDireito">
+      <textarea class="conteudo_ladoDireito_texto_textoDeSaida" cols="30" rows="30" contenteditable="true"
+        readonly></textarea>
+      <div class="mensagem">
+        <img class="conteudo_imagem_ladoDireito" src="assets/High quality products 1 1.png" alt="imagem lupa">
+        <h1 class="mensagemErro"></h1>
+        <p class="conteudo_texto_ladoDireito">Digite um texto que você deseja criptografar ou descriptografar.</p>
+      </div>
+      <div class="conteudo_botoes_ladoDireito">
+        <button class="botaoCopiar" onclick="copiarTexto()">Copiar</button>
+        <button class="botaoLimpar" onclick="limparTextoSaida()">Limpar</button>
+      </div>
+      <div class="mensagemSucesso" style="display: none;">Texto copiado com sucesso!</div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Desenvolvido por <strong>Rosembergue Morais</strong> Projeto programa Oracle ONE</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
